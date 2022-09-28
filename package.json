@@ -1,0 +1,39 @@
+{
+  "name": "@fujia-blogs/javascript",
+  "version": "1.0.0",
+  "description": "Summarize the knowledge points related to javascript",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fujia-blogs/javascript.git"
+  },
+  "keywords": [
+    "blogs",
+    "articles",
+    "fujia",
+    "javascript"
+  ],
+  "author": {
+    "email": "fujia.site@outlook.com",
+    "name": "fujia",
+    "url": "https://fujia.site"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fujia-blogs/javascript/issues"
+  },
+  "homepage": "https://github.com/fujia-blogs/javascript#readme",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^15.0.0",
+    "commitlint": "^15.0.0",
+    "concurrently": "^7.1.0",
+    "husky": "^7.0.4"
+  }
+}
