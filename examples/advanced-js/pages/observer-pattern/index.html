@@ -19,5 +19,21 @@
       />
       <button id="new_btn">new</button>
     </div>
+    <div>
+      <div>
+        <button id="send_btn">send</button>
+      </div>
+      <iframe src="./assets/child.html" id="iframe1" frameborder="0"></iframe>
+    </div>
+
+    <script>
+      document.getElementById('send_btn').addEventListener('click', () => {
+        window.iframe1.contentWindow.postMessage('hello', '*');
+      });
+
+      window.addEventListener('message', (event) => {
+        console.log(event.data);
+      });
+    </script>
   </body>
 </html>
