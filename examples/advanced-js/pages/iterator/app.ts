@@ -17,6 +17,8 @@
 //   root.innerText = sayHi("stage");
 // }
 
+import './traverse';
+
 class DataIterator {
   private data: number[];
   private index = 0;
@@ -52,8 +54,8 @@ const container = new DataContainer();
 
 const iterator = container.getIterator();
 
-while (iterator.hasNext()) {
-  const num = iterator.next();
+// while (iterator.hasNext()) {
+//   const num = iterator.next();
 
-  console.log(num);
-}
+//   console.log(num);
+// }
